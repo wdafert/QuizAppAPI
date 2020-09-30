@@ -57,14 +57,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         try {
                             Log.e("Rest Response","inside for loop1");
-//                            JSONArray jsonArray = response.getJSONArray("content");
+                            JSONArray jsonArray = response.getJSONArray("content");
                             Log.e("Rest Response","inside for loop2");
-                            JSONObject quiz = response.getJSONObject(0);
-                                String title = quiz.getString("title");
-                                String text = quiz.getString("text");
-                                Log.e("Rest Response",text);
-                                Log.e("Rest Response","inside for loop3");
-                                mTextViewResult.append(title+ " "+ text);
+//                            JSONObject quiz = response.getJSONObject(0);
+//                                String title = quiz.getString("title");
+//                                String text = quiz.getString("text");
+//                                Log.e("Rest Response",text);
+//                                Log.e("Rest Response","inside for loop3");
+//                                mTextViewResult.append(title+ " "+ text);
 
 
                         } catch (JSONException e) {
